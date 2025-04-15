@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Pendaftaran Staf - Indomaret</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 480px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #00bcd4;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0097a7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Staff Registration Form</h2>
+    <form action="https://formspree.io/f/xyzevnzd" method="POST">
+      <label for="jabatan">Melamar*</label>
+      <input type="text" name="Jabatan" id="jabatan" required />
+
+      <label for="nik">Nomor KTP*</label>
+      <input type="text" name="Nomor_KTP" id="nik" required />
+
+      <label for="nama">Nama Lengkap*</label>
+      <input type="text" name="Nama_Lengkap" id="nama" required />
+
+      <label for="gender">Jenis Kelamin*</label>
+      <select name="Jenis_Kelamin" id="gender" required>
+        <option>Laki-laki</option>
+        <option>Perempuan</option>
+      </select>
+
+      <label for="wa">Nomor HP (WhatsApp)*</label>
+      <input type="text" name="Nomor_HP" id="wa" required />
+
+      <label for="email">Email*</label>
+      <input type="email" name="Email" id="email" required />
+
+      <label for="tgl_lahir">Tanggal Lahir sesuai KTP*</label>
+      <input type="date" name="Tanggal_Lahir" id="tgl_lahir" required />
+
+      <label for="tinggi">Tinggi Badan*</label>
+      <input type="text" name="Tinggi_Badan" id="tinggi" required />
+
+      <label for="alamat_ktp">Alamat KTP*</label>
+      <textarea name="Alamat_KTP" id="alamat_ktp" required></textarea>
+
+      <label for="alamat_domisili">Alamat Domisili*</label>
+      <textarea name="Alamat_Domisili" id="alamat_domisili" required></textarea>
+
+      <label for="agama">Agama*</label>
+      <select name="Agama" id="agama" required>
+        <option>Islam</option>
+        <option>Kristen</option>
+        <option>Hindu</option>
+        <option>Budha</option>
+      </select>
+
+      <label for="suku">Suku</label>
+      <input type="text" name="Suku" id="suku" />
+
+      <label for="status">Status Wanita</label>
+      <select name="Status_Wanita" id="status">
+        <option>Belum Menikah</option>
+        <option>Sudah Menikah</option>
+      </select>
+
+      <label for="pendidikan">Pendidikan Terakhir*</label>
+      <select name="Pendidikan_Terakhir" id="pendidikan" required>
+        <option>SMA/SMK</option>
+        <option>D3</option>
+        <option>S1</option>
+      </select>
+
+      <label for="jurusan">Program Studi/Jurusan</label>
+      <input type="text" name="Jurusan" id="jurusan" />
+
+      <label for="ipk">IPK Terakhir</label>
+      <input type="text" name="IPK" id="ipk" />
+
+      <label for="tahun_lulus">Tahun Kelulusan</label>
+      <input type="text" name="Tahun_Lulus" id="tahun_lulus" />
+
+      <label for="keahlian">Keahlian Khusus</label>
+      <input type="text" name="Keahlian_Khusus" id="keahlian" />
+
+      <label for="pengalaman">Pengalaman Kerja/Magang</label>
+      <textarea name="Pengalaman" id="pengalaman"></textarea>
+
+      <label>Pernah Mengikuti Rekrutmen?</label>
+      <select name="Pernah_Mengikuti_Rekrutmen">
+        <option>Belum Pernah</option>
+        <option>Sudah Pernah</option>
+      </select>
+
+      <label for="photo">Upload Foto*</label>
+      <input type="file" name="Foto" id="photo" />
+
+      <label for="info">Info Lowongan*</label>
+      <select name="Info_Lowongan" id="info" required>
+        <option>Website Indomaret</option>
+        <option>Media Sosial</option>
+        <option>Rekomendasi</option>
+      </select>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+</body>
+</html>
